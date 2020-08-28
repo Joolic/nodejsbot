@@ -89,7 +89,6 @@ client.on("guildMemberRemove", (member) => {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
       {name: '=도움말', desc: '배구봇 도움말을 생성합니다.'},
-      {name: '=초대코드', desc: '서버의 초대코드를 생성합니다.'},
       {name: '=초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '=종합코드', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
     ];
