@@ -74,8 +74,6 @@ client.on('message', (message) => {
       });
   
       embed.addField('Commands: ', commandStr);
-  
-      embed.addField('Commands: ', commandStr);
 
       message.channel.send(embed)
     } else if(message.content == '=종합코드') {
