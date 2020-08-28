@@ -68,7 +68,7 @@ client.on("guildMemberRemove", (member) => {
       }
 
   if(message.content == '=엠베드') {
-    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+    let img = 'https://cdn.discordapp.com/avatars/691536688568205324/d37511460dba76d0570199acf02bb47b.webp?size=128';
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
       .setURL('http://www.naver.com')
