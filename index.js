@@ -1,3 +1,6 @@
+require("moment-duration-format");
+let moment = require('moment') 
+require('moment-timezone')
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
@@ -36,9 +39,9 @@ client.on("guildMemberRemove", (member) => {
       return message.reply('pong');
     }
 
-    if(message.content == '=si') {
+    if(message.content == '=서버상태') {
         let embed = new Discord.RichEmbed()
-        let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+        let img = 'https://cdn.discordapp.com/icons/737573174102720555/df7ded003a3aed77a111141b04c66cf4.webp?size=128';
         var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
         embed.setColor('#186de6')
         embed.setAuthor('server info of 배구봇', img)
