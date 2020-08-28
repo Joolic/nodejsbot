@@ -7,8 +7,9 @@ const welcomeChannelComment = "님! 배구방 서버에 오신걸 환영합니�
 const byeChannelComment = "님! 안녕히가세요ㅠㅠ";
 
 client.on('ready', () => {
-  console.log('켰다.');
-});
+    console.log('ON');
+    client.user.setPresence({ game: { name: '=도움말 을 쳐보세요.' }, status: 'online' })
+  });
 
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild;
@@ -17,7 +18,7 @@ client.on("guildMemberAdd", (member) => {
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
 
-  member.addRole(guild.roles.find(role => role.name == "게스트"));
+  member.addRole(guild.roles.find(role => role.name == "USER"));
 });
 
 client.on("guildMemberRemove", (member) => {
