@@ -35,7 +35,7 @@ client.on("guildMemberRemove", (member) => {
     if(message.content == 'ping') {
       return message.reply('pong');
     }
-  
+
     if(message.content == '=si') {
         let embed = new Discord.RichEmbed()
         let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
