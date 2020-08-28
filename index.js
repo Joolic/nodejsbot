@@ -94,6 +94,7 @@ client.on("guildMemberRemove", (member) => {
       {name: '=도움말', desc: '배구봇 도움말을 생성합니다.'},
       {name: '=초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '=종합코드', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
+      {name: '=서버상태', desc: '서버의 현재 상태를 표기'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
